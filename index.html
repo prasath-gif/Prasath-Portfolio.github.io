@@ -1,0 +1,223 @@
+<?php
+ if(isset($_POST['submit'])){
+     $name = $_POST['name'];
+     $mobile = $_POST['phn'];
+     $mail = $_POST['mailid'];
+     $msg = $_POST['msg'];
+     
+ }
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prasath's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="indexcolor.css" rel="stylesheet">
+    <link href="logo.jpg" rel="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="main">
+    <h2 class="title">
+        Prasath's Portfolio
+    </h2>
+    <ul>
+        <a href="#about">About</a>
+        <a href="#contacts">Contact</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#project">Projects</a>
+        <a href="#skillset">Skills</a>
+       
+    </ul>
+    <button id="shwbtn"style="font-size:24px" onclick="showpopup()"><i class="fa fa-bars"></i></button>
+    
+    </div>
+    <div id="popup">
+        <button id="clsbtn" onclick="closepopup()"style="font-size:20px"><i class="fa fa-close"></i></button>
+        <br><ul>
+        <a href="#about">About</a>
+        <a href="#contacts">Contact</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#project">Projects</a>
+        <a href="#skillset">Skills</a>
+       
+    </ul>
+    </div>
+    
+    <div class="content">
+        <div class="names">
+            <h2>
+                Hello, I am Prasath<br>
+                <div class="roles">
+                <span>Frontend Developer</span>
+                <span>Backend PHP Coder</span>
+                <span>Software Developer</span>
+                <span>Debugger</span>
+               </div>
+            </h2>
+            <a href="Prasath_N_Resume.pdf" download>
+            <button class="download">Download My Resume &#8595;</button>
+            </a>
+        </div>
+        <div class="pic">
+            <img src="prasath_.png" alt="Pic" height="100%" width="70%">
+        </div>
+    </div>
+    <div class="abt" id="about">
+        <h1 style="text-align:center;">About Me</h1>
+        <h3 style="text-align:left;padding:30px;">
+            Hi, I’m Prasath, a Junior software developer with a strong foundation in both front-end and back-end web development. 
+I have hands-on experience with HTML, CSS, and JavaScript for building interactive and dynamic interfaces,<br><br>I use PHP for writing server-side logic. On the programming side, I’ve also worked with C and Python. For databases, I’m comfortable with MySQL, allowing me to design and manage structured data effectively.
+            <br><br>
+My goal is to grow into a skilled full stack developer, continuously learning new technologies and building projects that solve real-world problems.
+        </h3>
+    </div>
+    <center>
+        <hr style="width:100%;">
+    <div class="skills" id="skillset">
+        <h2>Skills</h2> 
+        
+        <div class="cards">
+            <div class="language">
+                <h3>Programming Languages</h3>
+                <img src="python.jpg" alt="python" height="60px" width="50px">
+             &nbsp;
+                <img src="c.jpg" alt="c" height="60px" width="50px">
+                &nbsp;
+                <img src="vb.png" alt="visualbasic" height="60px" width="50px">
+                
+            </div>
+            <div class="database">
+                <h3>Database</h3>
+               
+                <img src="mysql.jpg" alt="mysql" height="60px" width="50px">
+                &nbsp;
+                <img src="SQL.png" alt="sqlserver" height="60px" width="50px">
+                &nbsp;
+                <img src="maria.png" alt="sqlserver" height="60px" width="50px">
+          
+            </div>
+            <div class="front">
+                <h3>Front-End Technologies</h3>
+                
+                <img src="html.jpg" alt="html" height="60px" width="50px">
+                &nbsp;
+                <img src="css.jpg" alt="css" height="60px" width="50px">
+               &nbsp;
+                <img src="js.jpg" alt="javascript" height="60px" width="50px">
+            </div>
+            <div class="back">
+                <h3>Back-End Technology</h3>
+                
+                <img src="php.png" alt="php" height="60px" width="50px">
+            </div>
+        </div>
+    </div>
+    <hr style="width:100%;">
+    </center>
+        
+        <div class="projects" id="project">
+            <h2>Projects</h2>
+            <div class="prj1">
+                <details>
+                    <summary>
+                        Facebook Clone Login & Signup
+                        
+                    </summary>
+                    <p>
+                        Designed and Developed Facebook Clone webpage for Login and Signup
+                        <br>
+                        <span style="color:gold;">Technologies Used : Html, Css, Javascript and PHP</span>
+                        <a href="" style="color:aqua;">Check Here&#x2192;</a>
+                    </p>
+                </details>
+            </div>
+            <div class="prj2">
+                <details>
+                    <summary>
+                        Bus Ticket Booking Webpage Design
+                    </summary>
+                    <p>
+                        Designed Bus ticket Booking Webpage
+                        <br>
+                        <span style="color:gold;">Technologies Used : Html, Css, Javascript</span>
+                        <a href="" style="color:aqua;">Check Here&#x2192;</a>
+                    </p>
+                </details>
+            </div>
+            <div class="prj3">
+                <details>
+                    <summary>
+                        Saggy Snacks Webpage
+                    </summary>
+                    <p>
+                        Developed and Designed User friendly Webpage for ordering snacks
+                        <br>
+                        <span style="color:gold;">Technologies Used : Html, Css, Javascript</span>
+                        <a href="" style="color:aqua;">Check Here&#x2192;</a>
+                    </p>
+                </details>
+                
+            </div>
+            
+        </div>
+    <hr style="width:100%;">
+    <div class="certify" id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Python Basic Certification by HackerRank <a href="Pycer.jpg">Link</a></li>
+            <li>C Programming Basic Certification by Udemy <a href="Ccer.jpg">Link</a></li>
+            <li>SQL Mastery Certification by Learnz Development Hub <a href="Sqlcer.png">Link</a></li>
+        </ul>
+    </div>
+    <center>
+       <hr style="width:100%;">
+    
+    <div class="contact" id="contacts">
+        
+            <h2>Contact Me</h2>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="/* Optional JS here */"></iframe>
+             <form 
+             action="https://docs.google.com/forms/d/e/1FAIpQLSdTjgWOtSXkxNZYeGNsdOnMiXyaN3R3AYvkLqFZyX6ZjZmH2Q/formResponse"
+             target="hidden_iframe" 
+             method="post"
+             onsubmit="document.getElementById('msgshow').innerText='Thank you for Contacting &#128522;';">
+            <input type="text" placeholder="Name" name="entry.986952942">
+            <input type="number" placeholder="Mobile" name="entry.673885920">
+            <input type="mail" placeholder="Mail Address" name="entry.203823396">
+            <textarea placeholder="Enter Your Message" name="entry.1257642757"></textarea><br>
+            <input type="submit" value="Submit" id="sbtn">
+            <p id="msgshow" style="color: rgb(23, 155, 54);"></p>
+        </form>
+        <a href="https://github.com/prasath-gif?tab=stars" class="fa fa-github fa-2x"></a>&nbsp;
+        <a href="https://www.instagram.com/prasath__karthi?igsh=NnR6dmVib2x0MW9z" class="fa fa-instagram fa-2x"></a>&nbsp;
+        <a href="https://www.linkedin.com/in/prasath-n" class="fa fa-linkedin fa-2x"></a>
+    </div>
+    </center>
+    <footer>
+        <h5>
+           All Rights reserved copyrights@2025 <span style="color:aqua;">Prasath Designs</span>
+        </h5>
+    </footer>
+    
+    <script>
+        var popupwin= document.getElementById("popup")
+        var showbtn = document.getElementById("shwbtn")
+        function showpopup(){
+            
+            showbtn.style.display = "none"
+            popupwin.classList.add("active")
+        }
+        function closepopup(){
+            showbtn.style.display = "block"
+        
+            popupwin.classList.remove("active")
+        }
+
+    </script>
+</body>
+</html>
